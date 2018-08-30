@@ -1,0 +1,22 @@
+<div style="text-align: center;">
+    <form action="/results" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <p><label for="name">Your name:</label>
+        <input type="text" name="user[name]"></p>
+        <p><label for="dojo_location">Dojo Location</label>
+        <select name="user[location]">
+            <option value="Mountain View">Mountain View</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Burank">Burank</option>
+        </select></p> 
+        <p><label for="favorite_language">Favorite Language</label>       
+        <select name="user[language]">
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Javascript">Javascript</option>
+        </select></p>    
+        <p>Comment (optional)</p>
+        <textarea name="user[comment]" cols="50" rows="5"></textarea>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</div>

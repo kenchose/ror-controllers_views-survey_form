@@ -1,0 +1,15 @@
+<div style="text-align: center; background-color: green">
+    <% if flash[:notice] %>
+        <h1 style="display:inline">Thanks for submitting this form! You have submitted this form <%= flash.notice %> times now.</h1>
+    <% end %>
+</div>
+<div style="text-align:center;">
+    <div style="display:inline">
+        <h2><u>Submitted Information</u></h2>
+        <p>Name: <%= @user.name %></p>
+        <p>Dojo Location: <%= @user.location %></p>
+        <p>Favorite Language: <%= @user.language %></p>
+        <p>Comment: <%= @user.comment %></p>
+        <button><a href="/">Go Back</a></button>
+    </div>
+</div>
